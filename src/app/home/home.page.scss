@@ -1,6 +1,5 @@
 #container {
-  text-align: center;
-
+  text-align: left;
   position: absolute;
   left: 0;
   right: 0;
@@ -9,7 +8,7 @@
 }
 
 #container strong {
-  font-size: 20px;
+  font-size: 12px;
   line-height: 26px;
 }
 
@@ -24,4 +23,36 @@
 
 #container a {
   text-decoration: none;
+}
+
+#containertwo {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+#button {
+  color: #8c8c8c;
+  font-size: xx-large;
+  width: 300px;
+  margin-left: 200px;
+  align-items: center;
+  position: absolute;
+  transform: translateY(400px);
+
+}
+
+#input {
+  width: 300px;
+  margin-bottom: 100px;
+  position: center;
+}
+
+
+
+#break {
+  margin-top: 400px;
 }

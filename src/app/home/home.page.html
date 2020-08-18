@@ -1,20 +1,62 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>
+			Blank
+		</ion-title>
+	</ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true"
+             class="home.page">
+	<ion-header collapse="condense">
+		<ion-toolbar>
+			<ion-title size="large">Blank</ion-title>
+		</ion-toolbar>
+	</ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+	<ion-input value="custom"
+	           type="text"
+	           id="tbName"
+	           #tbName
+	></ion-input>
+
+	<div id="container">
+		<strong>Ready to create an app dude?</strong>
+		<p>{{titleText}}
+			<br id="break"/><a target="_blank" rel="noopener noreferrer"
+			                   href="https://ionicframework.com/docs/components">UI Components</a></p>
+	</div>
+	<div class="home.page">
+		<p>{{title}}</p>
+		<p>{{calc(2, 3)}}</p>
+	</div>
+	<div id="containertwo">
+		<p>text</p>
+		<ion-button
+
+				(click)="onClick()"
+				id="button"
+				href="https://mobile-box.eu"
+				fill="solid"
+				[textContent]="title"
+		>
+		</ion-button>
+	</div>
+	<ion-button
+			type="submit"
+			(click)="onClickButtonTwo(lblName.id, tbName.value)" id=""bt>Button two
+	</ion-button>
+	<ion-item id="input">
+		<ion-label position="floating">Floating Label</ion-label>
+		<ion-input></ion-input>
+	</ion-item>
+	<br/>
+	<br/>
+	<ng-container>
+		<p>
+			<label #lblName id="lblName"></label>
+		</p>
+	</ng-container>
+
+
 </ion-content>
