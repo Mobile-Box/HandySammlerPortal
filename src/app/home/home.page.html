@@ -6,71 +6,31 @@
 	</ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true"
-             class="home.page">
-	<ion-header collapse="condense">
-		<ion-toolbar>
-			<ion-title size="large">Blank</ion-title>
-		</ion-toolbar>
-	</ion-header>
-
-	<ion-input value="custom"
-	           type="text"
-	           id="tbName"
-	           #tbName
-	></ion-input>
-
-	<div id="container">
-		<strong>Ready to create an app dude?</strong>
-		<p>{{titleText}}
-			<br id="break"/><a target="_blank" rel="noopener noreferrer"
-			                   href="https://ionicframework.com/docs/components">UI Components</a></p>
-	</div>
-	<div class="home.page">
-		<p>{{title}}</p>
-		<p>{{calc(2, 3)}}</p>
-	</div>
-	<div id="containertwo">
-		<p>text</p>
-		<ion-button
-
-				(click)="onClick()"
-				id="button"
-				href="https://mobile-box.eu"
-				fill="solid"
-				[textContent]="title"
-		>
-		</ion-button>
-	</div>
-	<ion-button
-			type="submit"
-			(click)="onClickButtonTwo(lblName.id, tbName.value)" id=""bt>Button two
-	</ion-button>
-	<ion-item id="input">
-		<ion-label position="floating">Floating Label</ion-label>
-		<ion-input></ion-input>
-	</ion-item>
+<ion-content [fullscreen]="true">
 	<br/>
 	<ion-grid>
-		<ion-row>
-			<ion-col size="8">
-				<div>
-					1 of 2
-				</div>
+		<ion-row
+				justify-content-center>
+			<ion-col
+					class = "someclass"
+					size="3">
+				<div>links</div>
 			</ion-col>
-			<ion-col>
-				<div>
-					2 of 2
-				</div>
+			<ion-col
+					size="9"
+					class="align-text-middle"
+					text-center>
+				<ion-item id="input">
+					<ion-label position="floating">Floating Label</ion-label>
+					<ion-input text-center>
+					</ion-input>
+				</ion-item>
 			</ion-col>
 		</ion-row>
 	</ion-grid>
 	<br/>
-	<ng-container>
-		<p>
-			<label #lblName id="lblName"></label>
-		</p>
-	</ng-container>
 
 
 </ion-content>
+
+<!-- https://parithi.com/how-to-build-a-responsive-login-form-using-ionic-4-7a74b776884d -->

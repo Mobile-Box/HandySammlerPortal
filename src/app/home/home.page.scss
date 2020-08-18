@@ -45,6 +45,15 @@
 
 }
 
+.align-text-middle {
+  display: flex;
+  align-items: center;
+}
+
+ion-col.someclass {
+  text-align: center;
+}
+
 #input {
   width: 300px;
   margin-bottom: 100px;
